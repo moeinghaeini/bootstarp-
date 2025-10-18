@@ -1,0 +1,139 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2000
+>>
+stream
+BT
+/F1 24 Tf
+100 750 Td
+(Moein Ghaeini) Tj
+0 -30 Td
+/F1 16 Tf
+(AWS Cloud Data Engineer & Game Developer) Tj
+0 -40 Td
+/F1 12 Tf
+(Email: moein@example.com | Phone: (555) 123-4567) Tj
+0 -20 Td
+(LinkedIn: linkedin.com/in/moeinghaeini | GitHub: github.com/moeinghaeini) Tj
+0 -40 Td
+/F1 18 Tf
+(Professional Summary) Tj
+0 -25 Td
+/F1 12 Tf
+(Experienced AWS Cloud Data Engineer and Game Developer with expertise in building) Tj
+0 -15 Td
+(scalable data pipelines and immersive game experiences. Currently pursuing MSc in) Tj
+0 -15 Td
+(Computer Science at University of Milan, specializing in cloud architecture and AI.) Tj
+0 -40 Td
+/F1 18 Tf
+(Experience) Tj
+0 -25 Td
+/F1 14 Tf
+(Cloud Data Engineer | TechCorp Solutions | 2021 - Present) Tj
+0 -20 Td
+/F1 12 Tf
+(• Built scalable AWS data pipelines serving 100K+ users) Tj
+0 -15 Td
+(• Architected microservices using Python and AWS services) Tj
+0 -15 Td
+(• Implemented MLOps pipelines with AWS SageMaker) Tj
+0 -15 Td
+(• Technologies: AWS, Python, Docker, Kubernetes, Apache Spark) Tj
+0 -30 Td
+/F1 14 Tf
+(Game Developer | Digital Innovations Inc. | 2019 - 2021) Tj
+0 -20 Td
+/F1 12 Tf
+(• Developed cross-platform games with Unity and Unreal Engine) Tj
+0 -15 Td
+(• Created immersive VR/AR experiences) Tj
+0 -15 Td
+(• Technologies: Unity, Unreal Engine, C#, Blender) Tj
+0 -40 Td
+/F1 18 Tf
+(Education) Tj
+0 -25 Td
+/F1 14 Tf
+(University of Milan | MSc Computer Science | 2022 - Present) Tj
+0 -20 Td
+/F1 12 Tf
+(Specializing in Cloud Architecture and AI/ML) Tj
+0 -15 Td
+(Current GPA: 3.8/4.0) Tj
+0 -30 Td
+/F1 14 Tf
+(UC Berkeley | Bachelor's in Computer Science | 2012 - 2016) Tj
+0 -20 Td
+/F1 12 Tf
+(Graduated Magna Cum Laude, GPA: 3.7/4.0) Tj
+0 -40 Td
+/F1 18 Tf
+(Skills) Tj
+0 -25 Td
+/F1 12 Tf
+(Cloud & Data: AWS, Python, Docker, Kubernetes, Apache Spark) Tj
+0 -15 Td
+(Game Development: Unity, Unreal Engine, C#, Blender) Tj
+0 -15 Td
+(AI/ML: PyTorch, TensorFlow, OpenAI, MLflow) Tj
+0 -15 Td
+(Location: Hamburg, Germany → Milan, Italy) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000002300 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+2358
+%%EOF
