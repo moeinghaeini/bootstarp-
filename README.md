@@ -5,7 +5,7 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 ## 🚀 Premium Features (10/10 Rating)
 
 ### 🎨 **Visual Design Excellence**
-- **Dark Mode**: Automatic system preference detection with manual toggle
+- **Responsive Design**: Mobile-first approach with perfect scaling
 - **Advanced Animations**: Scroll-triggered animations with 3D transforms
 - **Particle.js Background**: Interactive particle system for visual appeal
 - **Gradient System**: Professional color psychology with perfect harmony
@@ -14,7 +14,7 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 ### 🚀 **Performance & Optimization**
 - **Lazy Loading**: Images load only when needed for optimal performance
 - **Resource Preloading**: Critical resources preloaded for instant rendering
-- **Service Worker**: PWA functionality with offline support
+- **Performance**: Optimized loading with resource preloading
 - **Performance Monitoring**: Real-time performance metrics tracking
 - **Code Splitting**: Optimized JavaScript loading
 
@@ -50,7 +50,6 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 - **Animations**: Custom CSS animations and JavaScript interactions
 
 ### **Advanced Features**
-- **PWA**: Service Worker, Web App Manifest
 - **Performance**: Resource hints, lazy loading, preloading
 - **Accessibility**: ARIA, semantic HTML, WCAG compliance
 - **Animations**: CSS3 transforms, Intersection Observer API
@@ -67,8 +66,6 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 │   └── styles.css      # Custom styles and animations
 ├── js/
 │   └── scripts.js      # Enhanced interactive functionality
-├── sw.js              # Service Worker for PWA features
-├── manifest.json      # Web App Manifest
 └── assets/
     ├── profile.png     # Professional headshot
     ├── favicon.ico     # Website icon
@@ -87,7 +84,7 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 
 ### **Interactive Elements**
 - **Particle System**: Dynamic background particles with mouse interaction
-- **Dark Mode**: Seamless theme switching with system preference detection
+- **Performance**: Optimized loading with resource preloading and lazy loading
 - **Micro-animations**: Subtle hover effects and loading states
 - **Scroll Animations**: Elements animate in as they enter viewport
 - **Form Validation**: Real-time feedback with visual indicators
@@ -98,7 +95,7 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 - **Tablet and desktop optimizations**: Perfect scaling across all screen sizes
 - **Touch-friendly navigation**: Enhanced touch interactions
 - **Optimized images and assets**: Lazy loading and WebP support
-- **PWA ready**: Installable on mobile devices
+- **Mobile optimized**: Perfect responsive design
 
 ## 🚀 Getting Started
 
@@ -106,8 +103,8 @@ A **perfect 10/10** modern, responsive personal portfolio website showcasing my 
 2. Open `index.html` in a web browser
 3. Navigate through the different sections
 4. Test the enhanced contact form functionality
-5. Try the dark mode toggle (top-right corner)
-6. Install as PWA on mobile devices
+5. Explore the responsive design and animations
+6. Test the responsive design on different devices
 
 ## ⭐ Perfect 10/10 Rating Achieved
 
@@ -117,7 +114,6 @@ This portfolio has been enhanced to achieve a perfect 10/10 rating through:
 - ✅ **Performance**: Optimized loading, lazy loading, resource preloading
 - ✅ **Accessibility**: WCAG AAA compliance, ARIA labels, keyboard navigation
 - ✅ **SEO**: Comprehensive meta tags, structured data, semantic HTML
-- ✅ **PWA**: Service worker, offline support, installable
 
 ### **User Experience**
 - ✅ **Visual Design**: Professional color system, smooth animations
@@ -126,14 +122,14 @@ This portfolio has been enhanced to achieve a perfect 10/10 rating through:
 - ✅ **Responsive**: Perfect on all devices and screen sizes
 
 ### **Modern Features**
-- ✅ **Dark Mode**: System preference detection with manual toggle
+- ✅ **Performance**: Optimized loading with resource preloading
 - ✅ **Advanced Animations**: Scroll-triggered, 3D transforms, parallax
 - ✅ **Error Handling**: Comprehensive error states and user feedback
 - ✅ **Performance Monitoring**: Real-time metrics and error tracking
 
 ## 📧 Contact
 
-- **Email**: moein@example.com
+- **Email**: moeinghaeini@gmail.com
 - **LinkedIn**: [linkedin.com/in/moeinghaeini](https://www.linkedin.com/in/moeinghaeini/)
 - **GitHub**: [github.com/moeinghaeini](https://github.com/moeinghaeini)
 - **Website**: [moeinghaeini.com](https://www.moeinghaeini.com)

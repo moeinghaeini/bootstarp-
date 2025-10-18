@@ -120,6 +120,7 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+
 *,
 *::before,
 *::after {
@@ -11930,16 +11931,6 @@ footer {
   }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .bg-light {
-    background-color: #1a1a1a !important;
-  }
-  
-  .text-muted {
-    color: #adb5bd !important;
-  }
-}
 
 /* Print styles */
 @media print {
@@ -12106,24 +12097,6 @@ footer {
   100% { transform: rotate(360deg); }
 }
 
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  background: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
-}
-
-.dark-mode-toggle:hover {
-  transform: scale(1.1);
-}
 
 /* Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
