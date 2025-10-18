@@ -5,6 +5,9 @@
 
 // Enhanced Portfolio JavaScript with 10/10 Features
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize profile image optimization
+    initializeProfileImage();
+    
     // Initialize Particles.js
     if (typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
@@ -202,7 +205,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
-
+// Profile Image Optimization
+function initializeProfileImage() {
+    const profileImg = document.querySelector('.profile-img');
+    
+    if (profileImg) {
+        // Add error handling
+        profileImg.addEventListener('error', function() {
+            console.warn('Profile image failed to load, using fallback');
+            this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iNjAiIGZpbGw9IiM2MzY2RjEiLz4KPHBhdGggZD0iTTE0MCAyODBDMTQwIDI0NS4zIDE3NS4zIDIxMCAyMjAgMjEwSDI4MEMzMjQuNyAyMTAgMzYwIDI0NS4zIDM2MCAyODBWMzQwSDE0MFYyODBaIiBmaWxsPSIjNjM2NkYxIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMzIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNkI3MjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPk1vZWluIEdoYWVpbmk8L3RleHQ+Cjwvc3ZnPgo=';
+        });
+        
+        // Add loading optimization
+        profileImg.addEventListener('load', function() {
+            this.style.opacity = '1';
+            this.classList.add('loaded');
+        });
+        
+        // Preload the image
+        const img = new Image();
+        img.src = profileImg.src;
+    }
+}
 
 // Advanced Animations
 function initializeAdvancedAnimations() {
@@ -437,11 +461,14 @@ style.textContent = `
     .profile-img {
         animation: float 6s ease-in-out infinite;
         transition: all 0.3s ease;
+        filter: brightness(1.05) contrast(1.1);
     }
     
     .profile-img:hover {
         animation-play-state: paused;
         transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.15);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
     }
     
     /* Enhanced Particles */
