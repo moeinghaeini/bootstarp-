@@ -5,10 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Moein Ghaeini - Experienced Full Stack Developer specializing in modern web technologies, mobile apps, and digital solutions. Let's build something amazing together!" />
         <meta name="author" content="Moein Ghaeini" />
-        <meta name="keywords" content="Moein Ghaeini, Full Stack Developer, Web Developer, Mobile App Developer, JavaScript, React, Node.js, Python, Digital Solutions" />
+        <meta name="keywords" content="Moein Ghaeini, Full Stack Developer, Web Developer, Mobile App Developer, JavaScript, React, Node.js, Python, Digital Solutions, Data Engineering, Game Development, Website Design, DevOps, Portfolio" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="bingbot" content="index, follow" />
+        <link rel="canonical" href="https://moeinghaeini.com/" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://moeinghaeini.com/" />
+        <meta property="og:title" content="Moein Ghaeini - Full Stack Developer & Digital Innovator" />
+        <meta property="og:description" content="Experienced Full Stack Developer specializing in modern web technologies, mobile apps, and digital solutions. Expert in Data Engineering, Game Development, and Website Design." />
+        <meta property="og:image" content="https://moeinghaeini.com/assets/profile.png" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+        <meta property="og:image:alt" content="Moein Ghaeini - Full Stack Developer" />
+        <meta property="og:site_name" content="Moein Ghaeini Portfolio" />
+        <meta property="og:locale" content="en_US" />
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://moeinghaeini.com/" />
+        <meta property="twitter:title" content="Moein Ghaeini - Full Stack Developer & Digital Innovator" />
+        <meta property="twitter:description" content="Experienced Full Stack Developer specializing in modern web technologies, mobile apps, and digital solutions. Expert in Data Engineering, Game Development, and Website Design." />
+        <meta property="twitter:image" content="https://moeinghaeini.com/assets/profile.png" />
+        <meta property="twitter:image:alt" content="Moein Ghaeini - Full Stack Developer" />
+        <meta property="twitter:creator" content="@moeinghaeini" />
+        <meta property="twitter:site" content="@moeinghaeini" />
+        
+        <!-- Additional SEO Meta Tags -->
+        <meta name="theme-color" content="#6366f1" />
+        <meta name="msapplication-TileColor" content="#6366f1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Moein Ghaeini" />
+        
         <title>Moein Ghaeini - Full Stack Developer & Digital Innovator</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="manifest" href="manifest.json" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +52,58 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        
+        <!-- Schema.org Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Moein Ghaeini",
+          "jobTitle": "Full Stack Developer",
+          "description": "Experienced Full Stack Developer specializing in modern web technologies, mobile apps, and digital solutions. Expert in Data Engineering, Game Development, and Website Design.",
+          "url": "https://moeinghaeini.com",
+          "image": "https://moeinghaeini.com/assets/profile.png",
+          "sameAs": [
+            "https://www.linkedin.com/in/moeinghaeini/",
+            "https://github.com/moeinghaeini",
+            "https://twitter.com/moeinghaeini",
+            "https://instagram.com/themoeinghaeini",
+            "https://facebook.com/moeinghaeini"
+          ],
+          "email": "moeinghaeini@gmail.com",
+          "knowsAbout": [
+            "Full Stack Development",
+            "Data Engineering", 
+            "Game Development",
+            "Website Design",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Python",
+            "Unity",
+            "DevOps"
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Full Stack Developer",
+            "description": "Building scalable web applications and digital solutions",
+            "skills": ["JavaScript", "React", "Node.js", "Python", "Data Engineering", "Game Development"]
+          },
+          "alumniOf": {
+            "@type": "Organization",
+            "name": "Technology Professional"
+          }
+        }
+        </script>
+        
+        <!-- Google Analytics (replace with your tracking ID) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GA_MEASUREMENT_ID');
+        </script>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -198,7 +285,7 @@
                 </div>
             </header>
             <!-- About Section-->
-            <section class="bg-light py-5">
+            <section class="bg-light py-5" itemscope itemtype="https://schema.org/Person">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
@@ -210,30 +297,30 @@
                                 <!-- Skills Showcase -->
                                 <div class="row mt-5">
                                     <div class="col-md-4 mb-4">
-                                        <div class="skill-card text-center p-4">
+                                        <div class="skill-card text-center p-4" itemscope itemtype="https://schema.org/Skill">
                                             <div class="skill-icon mb-3">
                                                 <i class="bi bi-graph-up text-primary" style="font-size: 3rem;"></i>
                                             </div>
-                                            <h5>Data Engineering</h5>
-                                            <p class="text-muted">Building scalable data pipelines and analytics solutions with modern technologies</p>
+                                            <h5 itemprop="name">Data Engineering</h5>
+                                            <p class="text-muted" itemprop="description">Building scalable data pipelines and analytics solutions with modern technologies</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-4">
-                                        <div class="skill-card text-center p-4">
+                                        <div class="skill-card text-center p-4" itemscope itemtype="https://schema.org/Skill">
                                             <div class="skill-icon mb-3">
                                                 <i class="bi bi-controller text-primary" style="font-size: 3rem;"></i>
                                             </div>
-                                            <h5>Game Development</h5>
-                                            <p class="text-muted">Interactive games and immersive experiences with Unity and modern game engines</p>
+                                            <h5 itemprop="name">Game Development</h5>
+                                            <p class="text-muted" itemprop="description">Interactive games and immersive experiences with Unity and modern game engines</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-4">
-                                        <div class="skill-card text-center p-4">
+                                        <div class="skill-card text-center p-4" itemscope itemtype="https://schema.org/Skill">
                                             <div class="skill-icon mb-3">
                                                 <i class="bi bi-palette text-primary" style="font-size: 3rem;"></i>
                                             </div>
-                                            <h5>Website Design</h5>
-                                            <p class="text-muted">Creating beautiful, responsive, and user-friendly web interfaces</p>
+                                            <h5 itemprop="name">Website Design</h5>
+                                            <p class="text-muted" itemprop="description">Creating beautiful, responsive, and user-friendly web interfaces</p>
                                         </div>
                                     </div>
                                 </div>

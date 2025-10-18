@@ -1,0 +1,26 @@
+{
+  "name": "Moein Ghaeini - Full Stack Developer Portfolio",
+  "short_name": "Moein Ghaeini",
+  "description": "Experienced Full Stack Developer specializing in modern web technologies, mobile apps, and digital solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/profile.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en",
+  "dir": "ltr"
+}

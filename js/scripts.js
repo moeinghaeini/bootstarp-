@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
         particlesJS('particles-js', {
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: ['#1e30f3', '#e21e80'] },
+                color: { value: ['#6366f1', '#f59e0b', '#4f46e5', '#d97706', '#4338ca', '#b45309'] },
                 shape: { type: 'circle' },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: '#1e30f3', opacity: 0.4, width: 1 },
+                opacity: { value: 0.6, random: true, anim: { enable: true, speed: 1, opacity_min: 0.3, sync: false } },
+                size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 1, sync: false } },
+                line_linked: { enable: true, distance: 150, color: '#6366f1', opacity: 0.5, width: 1.5 },
                 move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
             },
             interactivity: {
