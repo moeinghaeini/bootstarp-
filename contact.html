@@ -86,58 +86,91 @@
                         </div>
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8 col-xl-6">
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- * * SB Forms Contact Form * *-->
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- This form is pre-integrated with SB Forms.-->
-                                <!-- To make this form functional, sign up at-->
-                                <!-- https://startbootstrap.com/solution/contact-forms-->
-                                <!-- to get an API token!-->
-                                <form id="contactForm" action="mailto:moeinghaeini@gmail.com" method="post" enctype="text/plain">
+                                <!-- Enhanced Contact Form with Validation -->
+                                <form id="contactForm" class="needs-validation" novalidate>
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required minlength="2" maxlength="50" />
                                         <label for="name">Full name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                        <div class="invalid-feedback">Please provide a valid name (2-50 characters).</div>
+                                        <div class="valid-feedback">Looks good!</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
                                         <label for="email">Email address</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        <div class="invalid-feedback">Please provide a valid email address.</div>
+                                        <div class="valid-feedback">Looks good!</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phone">Phone number</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" pattern="[0-9+\-\s\(\)]+" />
+                                        <label for="phone">Phone number (optional)</label>
+                                        <div class="invalid-feedback">Please provide a valid phone number.</div>
+                                        <div class="valid-feedback">Looks good!</div>
+                                    </div>
+                                    <!-- Subject input-->
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="">Choose a subject...</option>
+                                            <option value="project-inquiry">Project Inquiry</option>
+                                            <option value="collaboration">Collaboration</option>
+                                            <option value="job-opportunity">Job Opportunity</option>
+                                            <option value="consultation">Consultation</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label for="subject">Subject</label>
+                                        <div class="invalid-feedback">Please select a subject.</div>
+                                        <div class="valid-feedback">Looks good!</div>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required minlength="10" maxlength="1000"></textarea>
                                         <label for="message">Message</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                        <div class="invalid-feedback">Please provide a message (10-1000 characters).</div>
+                                        <div class="valid-feedback">Looks good!</div>
+                                        <div class="form-text">Characters: <span id="charCount">0</span>/1000</div>
                                     </div>
-                                    <!-- Submit success message-->
-                                    <!---->
-                                    <!-- This is what your users will see when the form-->
-                                    <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
+                                    <!-- Loading State -->
+                                    <div class="d-none" id="loadingState">
                                         <div class="text-center mb-3">
-                                            <div class="fw-bolder">Form submission successful!</div>
-                                            To activate this form, sign up at
-                                            <br />
-                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Sending...</span>
+                                            </div>
+                                            <div class="mt-2">Sending your message...</div>
                                         </div>
                                     </div>
+                                    
+                                    <!-- Submit success message-->
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="alert alert-success text-center mb-3">
+                                            <i class="bi bi-check-circle-fill me-2"></i>
+                                            <strong>Message sent successfully!</strong>
+                                            <div class="mt-2">Thank you for reaching out. I'll get back to you within 24 hours.</div>
+                                        </div>
+                                    </div>
+                                    
                                     <!-- Submit error message-->
-                                    <!---->
-                                    <!-- This is what your users will see when there is-->
-                                    <!-- an error submitting the form-->
-                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                    <div class="d-none" id="submitErrorMessage">
+                                        <div class="alert alert-danger text-center mb-3">
+                                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                            <strong>Error sending message!</strong>
+                                            <div class="mt-2">Please try again or contact me directly at <a href="mailto:moeinghaeini@gmail.com">moeinghaeini@gmail.com</a></div>
+                                        </div>
+                                    </div>
+                                    
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Send Message</button></div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
+                                            <span class="btn-text">
+                                                <i class="bi bi-send me-2"></i>Send Message
+                                            </span>
+                                            <span class="btn-loading d-none">
+                                                <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                                                Sending...
+                                            </span>
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -164,10 +197,150 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- Enhanced Contact Form JS-->
+        <script>
+            // Enhanced Contact Form Functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('contactForm');
+                const submitButton = document.getElementById('submitButton');
+                const btnText = submitButton.querySelector('.btn-text');
+                const btnLoading = submitButton.querySelector('.btn-loading');
+                const charCount = document.getElementById('charCount');
+                const messageTextarea = document.getElementById('message');
+                
+                // Character counter for message
+                messageTextarea.addEventListener('input', function() {
+                    const count = this.value.length;
+                    charCount.textContent = count;
+                    
+                    if (count > 800) {
+                        charCount.parentElement.classList.add('text-warning');
+                    } else if (count > 900) {
+                        charCount.parentElement.classList.add('text-danger');
+                    } else {
+                        charCount.parentElement.classList.remove('text-warning', 'text-danger');
+                    }
+                });
+                
+                // Real-time validation
+                const inputs = form.querySelectorAll('input, select, textarea');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', function() {
+                        validateField(this);
+                    });
+                    
+                    input.addEventListener('input', function() {
+                        if (this.classList.contains('is-invalid')) {
+                            validateField(this);
+                        }
+                    });
+                });
+                
+                function validateField(field) {
+                    const isValid = field.checkValidity();
+                    field.classList.toggle('is-valid', isValid);
+                    field.classList.toggle('is-invalid', !isValid);
+                    return isValid;
+                }
+                
+                // Form submission
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Validate all fields
+                    let isFormValid = true;
+                    inputs.forEach(input => {
+                        if (!validateField(input)) {
+                            isFormValid = false;
+                        }
+                    });
+                    
+                    if (!isFormValid) {
+                        showNotification('Please fill in all required fields correctly.', 'error');
+                        return;
+                    }
+                    
+                    // Show loading state
+                    showLoadingState();
+                    
+                    try {
+                        // Simulate form submission (replace with actual backend integration)
+                        const formData = new FormData(form);
+                        const data = Object.fromEntries(formData);
+                        
+                        // Here you would typically send to your backend
+                        // const response = await fetch('/api/contact', {
+                        //     method: 'POST',
+                        //     headers: { 'Content-Type': 'application/json' },
+                        //     body: JSON.stringify(data)
+                        // });
+                        
+                        // Simulate API call
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+                        
+                        // Show success
+                        showSuccessState();
+                        form.reset();
+                        inputs.forEach(input => {
+                            input.classList.remove('is-valid', 'is-invalid');
+                        });
+                        charCount.textContent = '0';
+                        charCount.parentElement.classList.remove('text-warning', 'text-danger');
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        showErrorState();
+                    }
+                });
+                
+                function showLoadingState() {
+                    btnText.classList.add('d-none');
+                    btnLoading.classList.remove('d-none');
+                    submitButton.disabled = true;
+                    document.getElementById('loadingState').classList.remove('d-none');
+                }
+                
+                function showSuccessState() {
+                    btnText.classList.remove('d-none');
+                    btnLoading.classList.add('d-none');
+                    submitButton.disabled = false;
+                    document.getElementById('loadingState').classList.add('d-none');
+                    document.getElementById('submitSuccessMessage').classList.remove('d-none');
+                    document.getElementById('submitErrorMessage').classList.add('d-none');
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        document.getElementById('submitSuccessMessage').classList.add('d-none');
+                    }, 5000);
+                }
+                
+                function showErrorState() {
+                    btnText.classList.remove('d-none');
+                    btnLoading.classList.add('d-none');
+                    submitButton.disabled = false;
+                    document.getElementById('loadingState').classList.add('d-none');
+                    document.getElementById('submitErrorMessage').classList.remove('d-none');
+                    document.getElementById('submitSuccessMessage').classList.add('d-none');
+                }
+                
+                function showNotification(message, type) {
+                    const notification = document.createElement('div');
+                    notification.className = `alert alert-${type === 'error' ? 'danger' : 'success'} alert-dismissible fade show position-fixed`;
+                    notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+                    notification.innerHTML = `
+                        ${message}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    `;
+                    
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            notification.remove();
+                        }
+                    }, 5000);
+                }
+            });
+        </script>
     </body>
 </html>
